@@ -1,0 +1,9 @@
+/log/
+*.log
+
+ConfigRutasExtractorSemantico.java
+/medicos
+/pacientes
+/usuarios
+/build/
+/dist/
