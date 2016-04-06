@@ -132,6 +132,7 @@ public class FactoriaRecursoSimpleImp2 extends FactoriaRecursoSimple {
 					rutaClase = rutaClase.substring(0, posicion);
 				}
 				Class claseGenradoraRecurso = Class.forName(rutaClase);
+				
 				ImplRecursoSimple objRecurso = (ImplRecursoSimple) claseGenradoraRecurso
 						.getConstructor(String.class).newInstance(idRecurso);
 				return objRecurso;
