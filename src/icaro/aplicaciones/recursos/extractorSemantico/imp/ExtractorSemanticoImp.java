@@ -18,6 +18,7 @@ import gate.creole.ResourceInstantiationException;
 import gate.persist.PersistenceException;
 import gate.util.GateException;
 import gate.util.persistence.PersistenceManager;
+import icaro.infraestructura.recursosOrganizacion.recursoTrazas.imp.RecursoTrazasImp;
 
 import java.io.File;
 import java.io.IOException;
