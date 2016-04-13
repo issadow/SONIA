@@ -26,7 +26,7 @@ public class ClaseGeneradoraComunicacionChat extends ImplRecursoSimple
 	private String identExtractorSem;
 	private String url = null;
 	private String nickname = null;
-	private String chanel = "#kiwiirc-citas";
+	private String chanel = "#kiwiirc-sonia";
 	private String identInterlocutorPruebas = "pacopa22";
 	private Boolean conectado = false;
 

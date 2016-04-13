@@ -15,26 +15,24 @@ public class conversacion {
 		conversacion = new HashMap<String, List<String>>();
 		
 		List<String> saludoInicial = new ArrayList<String>();
-		saludoInicial.add("Hola, soy un agente encargado en recepcion y solicitud de citas medicas");
-		saludoInicial.add("Buenas, soy tu agente de confianza para manejo de citas medicas");
-		saludoInicial.add("Buenos dias, soy asistente tu para manejo de citas medicas");
+		saludoInicial.add("Hola, soy SONIA! Una chica bot creada para organizar quedadas entre grupos de amigos que no se conocen.");
+		saludoInicial.add("Buenas tardes! Estais preparados para quedar con un magnifico grupo de amigos y pasarlo genial?");
 		
-		List<String> solicitarNuevamenteDNI = new ArrayList<String>();
-		solicitarNuevamenteDNI.add("Para continuar voy a necesitar unos datos tuyos");
-		solicitarNuevamenteDNI.add("ahora voy a necesitar tus datos");
-		solicitarNuevamenteDNI.add("ahora quiero tus datos");
+		List<String> solicitarNuevamenteIDGrupo = new ArrayList<String>();
+		solicitarNuevamenteIDGrupo.add("Ahora si que si necesito vuestro identificador de grupo.");
+		solicitarNuevamenteIDGrupo.add("Necesito ahora ya si que me deis vuestro identificador de grupo.");
+		solicitarNuevamenteIDGrupo.add("Decidme ahora si que si vuestro identificador de grupo, pleasee.");
 		
 		
 		List<String> saludoInicialDescortes = new ArrayList<String>();
-		saludoInicialDescortes.add("??? Hola?? Podria ser un poco mas cortés");
-		saludoInicialDescortes.add("Buenos dias?? ");
-		saludoInicialDescortes.add("Para la proxima vez, es de buena educación saludar");
+		saludoInicialDescortes.add("Me gusta que me saluden antes jeje ;)");
+		saludoInicialDescortes.add("En primer lugar hola. Soy una chica educada, no como tu que ni saludas. Jajja es broma! Soy una maquina pero tengo sentido del humor :)");
+		saludoInicialDescortes.add("Se te ha olvidado el hola xD");
+		saludoInicialDescortes.add("Te parece bonito no saludarme tan siquiera? :P");
 		
 		List<String> solicitarNombre = new ArrayList<String>();
-		solicitarNombre.add("Con quien tengo el gusto de hablar?");
-		solicitarNombre.add("me darias tu nombre?");
-		solicitarNombre.add("tengo que comprobarte en el sistema, Cual es tu nombre?");
-		solicitarNombre.add("dime tu nombre?");
+		solicitarNombre.add("Msg SolicitarNombre");
+		solicitarNombre.add("Mensaje de SolicitarNombre.");
 		
 		List<String> solicitarNombreImperativo = new ArrayList<String>();
 		solicitarNombreImperativo.add("Para continuar le recuerdo que necesito su nombre");
@@ -52,35 +50,35 @@ public class conversacion {
 		obtencionNombre.add("Muchas gracias, ");
 		obtencionNombre.add("Esta todo listo, ");
 		
-		List<String> obtencionDNI = new ArrayList<String>();
-		obtencionDNI.add("Perfecto, te estoy registrando en el sistema ");
-		obtencionDNI.add("Muchas gracias, ya con eso puedo registrarte en el sistema");
+		List<String> obtencionIDGrupo = new ArrayList<String>();
+		obtencionIDGrupo.add("Genial! Me acordare a partir de ahora de vosotros cuando volvais por aqui ;)");
+		obtencionIDGrupo.add("Vaya identificador de grupo mas feo teneis no? Jajjaj es broma!");
 		
 		List<String> inactividad = new ArrayList<String>();
-		inactividad.add("hola?? se encuentra aun alli?");
-		inactividad.add("hola?? hola?? alguien en casa?");
-		inactividad.add("presumo que ya no se encuentra entre nosotros");
-		inactividad.add("hola??? sigue alli?.... como molesta que lo dejen hablando solo");
+		inactividad.add("Que sola estoy! Que sola!! Decidme algo ;(");
+		inactividad.add("Contestadme ya pesaos!!");
+		inactividad.add("Soy una chica muy ocupada, no puedo estar esperandoos eternamente!!");
+		inactividad.add("Como no me contesteis ya os apago el PC! Que a parte de organizar quedadas tambien soy una chica hacker :P");
 		
 		List<String> usuarioRegistrado = new ArrayList<String>();
-		usuarioRegistrado.add("Veo que ya te encuentras en el sistema");
-		usuarioRegistrado.add("Veo que no es la primera vez que pasas por aqui");
-		usuarioRegistrado.add("mmmm... pues ya te tengo en el sistema, ya estabas registrado");
+		usuarioRegistrado.add("Andaaa pero si ya os tenia registrados, tengo memoria pez disculpadme :(");
+		usuarioRegistrado.add("Ya os tengo localizados! Me alegro que hayais vuelto! Aunque no os he echado de menos ;)");
+		usuarioRegistrado.add("Anda que bien! Si ya os tengo registrados de otra vez. Me alegro de veros!");
 		
 		List<String> usuarionoRegistrado = new ArrayList<String>();
-		usuarionoRegistrado.add("Veo que aun no te encuentras registrado en el sistema");
-		usuarionoRegistrado.add("No te tengo en pantalla, voy a necesitar mas datos");
-		usuarionoRegistrado.add("Al ser la primera vez que utilizas el sistema necesitare mas datos");
+		usuarionoRegistrado.add("Me encanta que entren a utilizarme grupos nuevos! Necesito saber mas sobre vosotros, veamos...");
+		usuarionoRegistrado.add("Encantada de conoceros! Al ser la primera vez que hablo con vosotros necesito saber algunas cosas. A ver...");
+		usuarionoRegistrado.add("Encantada de conoceros! Tengo que preguntaros algunas cosas, no es que sea cotilla, es que lo necesito para encontraros grupos afines ;)");
 		
 		List<String> resaludar = new ArrayList<String>();
-		resaludar.add("Hola...creo que ya nos saludamos.");
-		resaludar.add("Hola hola...podemos estar todo el dia en esto si quieres.");
+		resaludar.add("Jajaja si ya nos hemos saludado antes!");
+		resaludar.add("Ya nos hemos saludado antes! Recuerda que soy una maquina, me acuerdo de todo :)");
 		
 		
 		List<String> sincontexto = new ArrayList<String>(); 
-		sincontexto.add("no entiendo de que hablas");
-		sincontexto.add("Te recuerdo que es un sistema exclusivo para citas medicas");
-		sincontexto.add("Hablame de asuntos con citas medicas por favor");
+		sincontexto.add("Disculpa que sea tan cortita, pero no te estoy entendiendo ;(");
+		sincontexto.add("No me estaras vacilando no? Es que no entiendo de que me estas hablando :(");
+		sincontexto.add("Sabes que mi nombre viene de Sistema Organizador de eNcuentros basado en Inteligencia Artificial?? Te digo esto porque no te estoy entendiendo, asi que por decir yo algo jeje.");
 		
 		List<String> distribucion = new ArrayList<String>(); 
 		distribucion.add("Listo, dime en que puedo ayudarte");
@@ -95,20 +93,20 @@ public class conversacion {
 		objetivoLogrado.add("Estoy a tus ordenes para cualquier otra cosa");
 		
 		List<String> despedida = new ArrayList<String>(); 
-		despedida.add("hasta otro dia");
-		despedida.add("un placer haberte ayudado");
-		despedida.add("hasta la proxima");
-		despedida.add("bye");
+		despedida.add("Espero que volvais pronto. Chaooo :3");
+		despedida.add("Hasta pronto!!");
+		despedida.add("Adios!! Espero que os hayais llevado una buena impresion de mi :)");
+		despedida.add("Hasta la proxima!! :)");
 		
-		List<String> peticionDNI = new ArrayList<String>(); 
-		peticionDNI.add("Para acelerar las cosas necesito tu DNI?");
-		peticionDNI.add("quiero tu DNI para validar que estas en el sistema");
-		peticionDNI.add("serias tan amable de darme tu DNI para revisarte en el sistema");
+		List<String> peticionIDGrupo = new ArrayList<String>(); 
+		peticionIDGrupo.add("Lo primero que necesito es vuestro identificador de grupo. Si no teneis ninguno no os preocupeis, inventaroslo ahora mismo!");
+		peticionIDGrupo.add("Cual es vuestro identificador de grupo? Si no sabeis de que hablo inventaros un nick que os identifique como grupo!");
+		peticionIDGrupo.add("Decidme please vuestro identificador de grupo. Si no teneis ninguno es buen momento para pensar uno ;)");
 		
-		List<String> peticionDNIimperativo = new ArrayList<String>(); 
-		peticionDNIimperativo.add("Disculpe, pero de verdad necesito el DNI para poder continuar");
-		peticionDNIimperativo.add("realmente necesito su DNI, el sistema no permite avanzar sin el DNI");
-		peticionDNIimperativo.add("NECESITO SU DNI, DEJE DE JUGAR");
+		List<String> peticionIDGrupoImperativo = new ArrayList<String>(); 
+		peticionIDGrupoImperativo.add("Si no me decis vuestro identificador de grupo no puedo seguir :(");
+		peticionIDGrupoImperativo.add("Vengaaa, dadme vuestro identificador de grupo o inventaros uno!");
+		peticionIDGrupoImperativo.add("Que pesaos!! Quereis darme ya vuestro identificador de grupo?");
 		
 		List<String> fechaAnterior = new ArrayList<String>(); 
 		fechaAnterior.add("Disculpe, la fecha en la que quiere la cita es anterior a la fecha actual, introduzca una fecha válida");
@@ -130,7 +128,7 @@ public class conversacion {
 		conversacion.put("saludoInicialDescortes", saludoInicialDescortes);
 		conversacion.put("solicitarNombre", solicitarNombre);
 		conversacion.put("obtencionNombre", obtencionNombre);
-		conversacion.put("obtencionDNI", obtencionDNI);
+		conversacion.put("obtencionIDGrupo", obtencionIDGrupo);
 		conversacion.put("inactividad", inactividad);
 		conversacion.put("usuarioRegistrado", usuarioRegistrado);
 		conversacion.put("usuarionoRegistrado", usuarionoRegistrado);
@@ -139,13 +137,13 @@ public class conversacion {
 		conversacion.put("distribucion", distribucion);
 		conversacion.put("objetivoLogrado", objetivoLogrado);
 		conversacion.put("despedida", despedida);
-		conversacion.put("peticionDNI", peticionDNI);
+		conversacion.put("peticionIDGrupo", peticionIDGrupo);
 		conversacion.put("solicitarNombreImperativo", solicitarNombreImperativo);
-		conversacion.put("peticionDNIimperativo", peticionDNIimperativo);
+		conversacion.put("peticionIDGrupoImperativo", peticionIDGrupoImperativo);
 		conversacion.put("solicitarAccionImperativo", solicitarAccionImperativo);
 		conversacion.put("semanticoErroneo", semanticoErroneo);
 		conversacion.put("fechaAnterior", fechaAnterior);
-		conversacion.put("solicitarNuevamenteDNI", solicitarNuevamenteDNI);		
+		conversacion.put("solicitarNuevamenteIDGrupo", solicitarNuevamenteIDGrupo);		
 	}
 	
 	
@@ -161,35 +159,5 @@ public class conversacion {
 		return result;
 	}
 	
-	public static final String saludoInicial = "Hola, soy un agente encargado en recepcion y solicitud de citas medicas";
-	public static final String resaludo1 = "hola?? creo que ya nos habiamos saludado";
 
-	public static final String SolicitarDNI1 = "ahora necesito que me digas tu numero DNI";
-
-	public static final String SolicitarNombre1 = "Con quien tengo el gusto de hablar";
-	public static final String SolicitarNombre2 = "me darias tu nombre?";
-	public static final String SolicitarNombre3 = "Hola, Tengo que comprobarte en el sistema, Cual es tu nombre?";
-
-	public static final String obtencionNombre1 = "Perfecto, te llamare de ahora en adelante ";
-	public static final String obtencionNombre2 = "De acuerdo ";
-
-	public static final String obtencionDNI1 = "Perfecto, te estoy registrando en el sistema";
-	public static final String obtencionDNI2 = "muchas gracias, te estoy registrando en el sistema";
-
-	public static final String distribucion1 = "Listo, dime en que puedo ayudarte";
-	public static final String distribucion2 = "En que puedo ayudarte";
-	public static final String distribucion3 = "Que deseas hacer?";
-
-	public static final String genericos1 = "y de que me sirve eso";
-	public static final String genericos2 = "no estoy interesado";
-	public static final String genericos3 = "hablemos de otra cosa";
-
-	public static final String inactividad1 = "hola?? se encuentra aun alli?";
-	public static final String inactividad2 = "hola?? hola?? alguien en casa?";
-	public static final String inactividad3 = "presumo que ya no se encuentra entre nosotros";
-
-	public static final String usuarioRegistrado = "Veo que ya se encuentras en el sistema";
-	public static final String usuarioNoRegistrado = "Veo que aun no te encuentras registrado en el sistema";
-	
-	public static final String despedida1 = "hasta otra ocasion";
 }

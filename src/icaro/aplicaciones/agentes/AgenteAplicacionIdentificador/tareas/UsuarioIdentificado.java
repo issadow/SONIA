@@ -5,7 +5,7 @@
 
 package icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.tareas;
 
-import icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.objetivos.ObtenerNombreUsuario;
+import icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.objetivos.ObtenerNombre;
 import icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.tools.conversacion;
 import icaro.aplicaciones.informacion.gestionCitas.UsuarioContexto;
 import icaro.aplicaciones.informacion.gestionCitas.VocabularioGestionCitas;

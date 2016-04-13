@@ -14,11 +14,11 @@ import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.Objetivo;
  *
  * @author
  */
-public class ObtenerDNIUsuario extends Objetivo {
+public class ObtenerNombre extends Objetivo {
 
 	/** Crea una nueva instancia de DarAcceso */
-	public ObtenerDNIUsuario() {
-		super.setgoalId("ObtenerDNI");
+	public ObtenerNombre() {
+		super.setgoalId("ObtenerNombre");
 	}
 
 }

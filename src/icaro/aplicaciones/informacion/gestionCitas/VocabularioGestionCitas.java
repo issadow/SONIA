@@ -24,7 +24,7 @@ public class VocabularioGestionCitas {
 	public static final String IdentRecursoComunicacionChat = "ComunicacionChat1";
 	public static final String IdentAgenteAplicacionDialogoCitas = "AgenteAplicacionDialogoCitas1";
 	public static final String IdentAgenteIdentificador = "AgenteAplicacionIdentificador1";
-	public static final String IdentConexionAgte = "AgteCitasMedicas";
+	public static final String IdentConexionAgte = "SONIA_Bot";
 	public static final String IdentRecursoPersistenciaChat = "PersistenciaChat1";
 	public static final String InfoUsuarioYaExiste = "infoUsuarioYaExistente";
 	public static final String InfoUsuarioAltaGuardada = "InfoAltaUsuarioGuardada";
@@ -39,7 +39,7 @@ public class VocabularioGestionCitas {
 	 * tareas.
 	 */
 	public static final String SaludoInicial2 = "Hola ";
-	public static final String SaludoInicial1 = "Hola soy un conversador que te ayudará a gestionar tus citas médicas";
+	public static final String SaludoInicial1 = "Hola soy Sonia! Tu organizadora de quedadas entre grupos de amigos que no se conocen. Enviame un mensaje privado y hablamos ;)";
 	public static final String PeticionInformacionGeneral1 = "Dime que deseas";
 	public static final String RespuestaNoEniendo1 = "Lo siento pero no entiendo nada de lo que dice";
 	public static final String RespuestaNoEniendo2 = "Lo siento pero sigo sin entender nada";

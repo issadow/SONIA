@@ -34,8 +34,8 @@ public class NotificarAlUsuarioSinContexto extends TareaSincrona {
 				mensajeAenviar = conversacion.msg("sincontexto");
 				foUsuario.intentos = foUsuario.intentos+1;
 			}else{
-				if(foUsuario.getFoco().getgoalId().equals("ObtenerDNI")){
-					mensajeAenviar = conversacion.msg("peticionDNIimperativo");
+				if(foUsuario.getFoco().getgoalId().equals("ObtenerIDGrupo")){
+					mensajeAenviar = conversacion.msg("peticionIDGrupoImperativo");
 					foUsuario.intentos =0 ;
 				}else if(foUsuario.getFoco().getgoalId().equals("ObtenerNombre")){
 					mensajeAenviar = conversacion.msg("solicitarNombreImperativo");

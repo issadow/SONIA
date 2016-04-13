@@ -6,7 +6,7 @@
 package icaro.aplicaciones.agentes.AgenteAplicacionDialogoPaciente.tareas;
 
 import icaro.aplicaciones.agentes.AgenteAplicacionDialogoCitasCognitivo.objetivos.ObtenerInfoInterlocutor;
-import icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.objetivos.ObtenerNombreUsuario;
+import icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.objetivos.ObtenerNombre;
 import icaro.aplicaciones.informacion.gestionCitas.FocoUsuario;
 import icaro.aplicaciones.informacion.gestionCitas.UsuarioContexto;
 import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.Focus;

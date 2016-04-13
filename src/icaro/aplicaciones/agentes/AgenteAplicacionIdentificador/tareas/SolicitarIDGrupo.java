@@ -5,7 +5,7 @@
 
 package icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.tareas;
 
-import icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.objetivos.ObtenerNombreUsuario;
+import icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.objetivos.ObtenerNombre;
 import icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.tools.conversacion;
 import icaro.aplicaciones.informacion.gestionCitas.UsuarioContexto;
 import icaro.aplicaciones.informacion.gestionCitas.VocabularioGestionCitas;
@@ -20,7 +20,7 @@ import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.TareaSincrona;
  *
  * @author Francisco J Garijo
  */
-public class SolicitarDNI extends TareaSincrona {
+public class SolicitarIDGrupo extends TareaSincrona {
 	private Objetivo contextoEjecucionTarea = null;
 
 	@Override
@@ -45,7 +45,7 @@ public class SolicitarDNI extends TareaSincrona {
 			if (ncu != null) {
 				cu.setNombre(ncu.getNombre());
 				
-				Objetivo f = new ObtenerNombreUsuario();
+				Objetivo f = new ObtenerNombre();
 				f.setSolved();
 				f.setobjectReferenceId(cu.getUsuario());
 				this.getEnvioHechos().insertarHechoWithoutFireRules(f);
