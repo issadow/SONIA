@@ -53,7 +53,7 @@
 	********************************************************************************************************-->
 		<icaro:DescRecursosAplicacion>
 			<icaro:DescRecursoAplicacion nombre="ComunicacionChat"
-			localizacionClaseGeneradora="icaro.aplicaciones.recursos.comunicacionChat.ClaseGeneradoraComunicacionChat"/>
+			localizacionClaseGeneradora="icaro.aplicaciones.recursos.comuSONIAChat.ClaseGeneradoraComuSONIAChat"/>
 			<icaro:DescRecursoAplicacion nombre="PersistenciaUsuarios"
 			localizacionClaseGeneradora="icaro.aplicaciones.recursos.persistenciaUsuarios.ClaseGeneradoraPersistenciaUsuarios"/>
 			<icaro:DescRecursoAplicacion nombre="ExtractorSemantico"

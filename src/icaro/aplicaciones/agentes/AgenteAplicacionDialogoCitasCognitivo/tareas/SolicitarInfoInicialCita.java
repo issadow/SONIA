@@ -8,7 +8,7 @@
 package icaro.aplicaciones.agentes.AgenteAplicacionDialogoCitasCognitivo.tareas;
 
 import icaro.aplicaciones.informacion.gestionCitas.VocabularioGestionCitas;
-import icaro.aplicaciones.recursos.comunicacionChat.ItfUsoComunicacionChat;
+import icaro.aplicaciones.recursos.comuSONIAChat.ItfUsoComuSONIAChat;
 import icaro.infraestructura.entidadesBasicas.NombresPredefinidos;
 import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.CausaTerminacionTarea;
 import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.Objetivo;
@@ -27,19 +27,18 @@ public class SolicitarInfoInicialCita extends TareaSincrona {
 		// String identRecursoVisualizacionAcceso = "VisualizacionAcceso1";
 		String identDeEstaTarea = this.getIdentTarea();
 		String identAgenteOrdenante = this.getIdentAgente();
-		String identInterlocutor = (String) params[0];
+		String identRecursoComunicacionChat = (String) params[0];
 		try {
 			// // Se busca la interfaz del recurso en el repositorio de
 			// interfaces
-			ItfUsoComunicacionChat recComunicacionChat = (ItfUsoComunicacionChat) NombresPredefinidos.REPOSITORIO_INTERFACES_OBJ
-					.obtenerInterfazUso(VocabularioGestionCitas.IdentRecursoComunicacionChat);
-			if (recComunicacionChat != null) {
-				recComunicacionChat.comenzar(identAgenteOrdenante);
-				String mensajeAenviar = identInterlocutor + ", ¿"
-						+ VocabularioGestionCitas.peticionInfoIicialCita1 + "?";
-				recComunicacionChat.enviarMensagePrivado(identInterlocutor,
-						mensajeAenviar);
-			} else {
+			
+			
+			ItfUsoComuSONIAChat recComunicacionChat = (ItfUsoComuSONIAChat) NombresPredefinidos.REPOSITORIO_INTERFACES_OBJ.obtenerInterfaz(
+						NombresPredefinidos.ITF_USO + identRecursoComunicacionChat); 
+			if (recComunicacionChat!=null){
+                recComunicacionChat.comenzar(identAgenteOrdenante);
+               recComunicacionChat.enviarMensagePrivado(VocabularioGestionCitas.SaludoInicial1);
+           } else {
 				identAgenteOrdenante = this.getAgente().getIdentAgente();
 				this.generarInformeConCausaTerminacion(
 						identDeEstaTarea,

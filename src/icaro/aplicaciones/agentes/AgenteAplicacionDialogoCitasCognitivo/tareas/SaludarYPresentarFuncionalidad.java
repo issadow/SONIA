@@ -10,7 +10,7 @@ package icaro.aplicaciones.agentes.AgenteAplicacionDialogoCitasCognitivo.tareas;
  */
 
 import icaro.aplicaciones.informacion.gestionCitas.VocabularioGestionCitas;
-import icaro.aplicaciones.recursos.comunicacionChat.ItfUsoComunicacionChat;
+import icaro.aplicaciones.recursos.comuSONIAChat.ItfUsoComuSONIAChat;
 import icaro.infraestructura.entidadesBasicas.NombresPredefinidos;
 import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.CausaTerminacionTarea;
 import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.Objetivo;
@@ -40,8 +40,10 @@ public class SaludarYPresentarFuncionalidad extends TareaSincrona {
 		try {
 			// // Se busca la interfaz del recurso en el repositorio de
 			// interfaces
-			ItfUsoComunicacionChat recComunicacionChat = (ItfUsoComunicacionChat) NombresPredefinidos.REPOSITORIO_INTERFACES_OBJ
+			ItfUsoComuSONIAChat recComunicacionChat = (ItfUsoComuSONIAChat) NombresPredefinidos.REPOSITORIO_INTERFACES_OBJ
 					.obtenerInterfazUso(VocabularioGestionCitas.IdentRecursoComunicacionChat);
+			
+			
 			if (recComunicacionChat != null) {
 				recComunicacionChat.comenzar(identAgenteOrdenante);
 				String mensajeAenviar = VocabularioGestionCitas.SaludoInicial2
@@ -49,7 +51,7 @@ public class SaludarYPresentarFuncionalidad extends TareaSincrona {
 						+ VocabularioGestionCitas.InfoGeneralFuncionalidad
 						+ "  "
 						+ VocabularioGestionCitas.PeticionInformacionGeneral1;
-				recComunicacionChat.enviarMensagePrivado(identInterlocutor,
+				recComunicacionChat.enviarMensagePrivado(
 						mensajeAenviar);
 			} else {
 				identAgenteOrdenante = this.getAgente().getIdentAgente();

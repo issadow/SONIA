@@ -8,7 +8,7 @@
 package icaro.aplicaciones.agentes.AgenteAplicacionIdentificador.tareas;
 
 import icaro.aplicaciones.informacion.gestionCitas.VocabularioGestionCitas;
-import icaro.aplicaciones.recursos.comunicacionChat.ItfUsoComunicacionChat;
+import icaro.aplicaciones.recursos.comuSONIAChat.ItfUsoComuSONIAChat;
 import icaro.infraestructura.entidadesBasicas.NombresPredefinidos;
 import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.CausaTerminacionTarea;
 import icaro.infraestructura.entidadesBasicas.procesadorCognitivo.Objetivo;
@@ -30,13 +30,13 @@ public class SaludoInicial extends TareaSincrona {
 		try {
 			// // Se busca la interfaz del recurso en el repositorio de
 			// interfaces
-			ItfUsoComunicacionChat recComunicacionChat = (ItfUsoComunicacionChat) NombresPredefinidos.REPOSITORIO_INTERFACES_OBJ
+			ItfUsoComuSONIAChat recComunicacionChat = (ItfUsoComuSONIAChat) NombresPredefinidos.REPOSITORIO_INTERFACES_OBJ
 					.obtenerInterfaz(NombresPredefinidos.ITF_USO
 							+ identRecursoComunicacionChat);
 			if (recComunicacionChat != null) {
 				recComunicacionChat.comenzar(identAgenteOrdenante);
 				recComunicacionChat
-						.enviarMensageCanal(VocabularioGestionCitas.SaludoInicial1);
+						.enviarMensagePrivado(VocabularioGestionCitas.SaludoInicial1);
 			} else {
 				identAgenteOrdenante = this.getAgente().getIdentAgente();
 				this.generarInformeConCausaTerminacion(identDeEstaTarea,

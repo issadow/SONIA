@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package icaro.aplicaciones.recursos.comunicacionChat.imp.util;
-
 import icaro.aplicaciones.recursos.comunicacionChat.imp.InterpreteMsgsIRC;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
